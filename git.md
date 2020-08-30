@@ -73,6 +73,7 @@ git add README.md
 git commit -m "first commit"
 git branch -M master
 git remote add origin https://github.com/WeisonWei/spring-boot-batch.git
+#初次关联远程仓库以后用 将会关联到远程的master 分支上，以后就可以git push不指定参数了
 git push -u origin master
 ```
 
