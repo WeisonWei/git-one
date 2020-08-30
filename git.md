@@ -63,3 +63,22 @@ git config --global user.email test@test.com
 # 修改提交的git的user.name  
 git config --global user.name test
 ```
+
+```shell
+# 往github上提交刚创建的新项目
+# create a new repository on the command line
+echo "# spring-boot-batch" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M master
+git remote add origin https://github.com/WeisonWei/spring-boot-batch.git
+git push -u origin master
+```
+
+```shell
+# push an existing repository from the command line
+git remote add origin https://github.com/WeisonWei/spring-boot-batch.git
+git branch -M master
+git push -u origin master
+```
