@@ -35,25 +35,6 @@ git push origin branchOld:branchNew
 git clone xxxxxxxxxxxxx.git -b branchName
 ```
 
-```shell
-# 创建新项目后提交至远程仓库
-## 1 在github上创建reactor3-core
-## 2 在本地仓库提交并推至远程仓库
-echo "# reactor3-core" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin git@github.com:WeisonWei/reactor3-core.git
-git push -u origin master
-
-```
-
-```shell
-# 将本地新项目代码提交至远程仓库
-git remote add origin git@github.com:WeisonWei/reactor3-core.git
-git push -u origin master
-```
-
 
 ```shell
 # 此命令会列出所有GIT当时能找到的配置
@@ -67,19 +48,19 @@ git config --global user.name test
 ```shell
 # 往github上提交刚创建的新项目
 # create a new repository on the command line
-echo "# spring-boot-batch" >> README.md
+echo "# mysql-jdbc" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
-git branch -M master
-git remote add origin https://github.com/WeisonWei/spring-boot-batch.git
+git branch -M trunk
+git remote add origin https://github.com/WeisonWei/mysql-jdbc.git
 #初次关联远程仓库以后用 将会关联到远程的master 分支上，以后就可以git push不指定参数了
-git push -u origin master
+git push -u origin trunk
 ```
 
 ```shell
 # push an existing repository from the command line
-git remote add origin https://github.com/WeisonWei/spring-boot-batch.git
-git branch -M master
-git push -u origin master
+git remote add origin https://github.com/WeisonWei/mysql-jdbc.git
+git branch -M trunk
+git push -u origin trunk
 ```
