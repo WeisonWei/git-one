@@ -1,2 +1,2 @@
-# devops-git
-devops-git
+# git-one
+git-one
